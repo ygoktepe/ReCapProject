@@ -10,7 +10,7 @@ namespace ConsoleUII
         {
             CarManager carManager = new CarManager(new InMemoryCarDal());
 
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetById())
             {
                 Console.WriteLine(car.Description);
             }
